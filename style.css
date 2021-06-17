@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* width: 100vw; */
+    /* overflow-y: hidden; */
+    background-image: url(BG.jpg);
+    background-repeat: repeat-y;
+}
+
+.widthMaintain {
+    min-width: 300px;
+    max-width: 600px;
+    /* background-color: #fdfffc; */
+    border-radius: 20px;
+    filter: drop-shadow(6px 12px 7px #292929)  ;
+    position: relative;
+    background-image: url(forPlate2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.widthMaintain2 {
+    min-width: 300px;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 10vh;
+    min-height: 80%;
+}
+/* #FF9800 */
+
+h1 {
+    color: #FED33C;
+}
+
+h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #FED33C;
+}
+
+ul li {
+    list-style: none;
+    width: 100%;
+    background-image: radial-gradient(#FFF, #e7e7e7);
+    color: #797E85;
+    height: 70px;
+    border-radius: 15px;
+    transform: translateY(1000%);
+    transition: transform 0.4s ease-in-out;
+}
+
+ul li+li {
+    transform: translateY(1000%);
+    transition: transform 0.10s ease-in-out;
+}
+
+ul li+li+li {
+    transform: translateY(1000%);
+    transition: transform 0.16s ease-in-out;
+}
+
+.selected {
+    list-style: none;
+    width: 100%;
+    background-image: radial-gradient(#FFF, #e7e7e7);
+    color: #797E85;
+    border: solid 2px blue;
+    height: 70px;
+    border-radius: 15px;
+}
+
+.answerCorrect {
+    list-style: none;
+    width: 100%;
+    background-image: radial-gradient(#4BE67E, #29B758);
+    color: #E9F4EA;
+    border: solid 2px blue;
+    height: 70px;
+    border-radius: 15px;
+}
+.answerWrong {
+    list-style: none;
+    width: 100%;
+    background-image: radial-gradient(#FE7C6F, #F13122);
+    color: #E9F4EA;
+    border: solid 2px blue;
+    height: 70px;
+    border-radius: 15px;
+}
+
+.submitButton {
+    height: 70px;
+    border-radius: 15px;
+}
+
+img {
+    position: relative;
+    z-index: 5;
+    top: 20%;
+    left: 30%;
+}
